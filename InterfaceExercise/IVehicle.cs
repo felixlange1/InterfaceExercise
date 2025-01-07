@@ -1,6 +1,6 @@
 namespace InterfaceExercise;
 
-public interface IVehicle
+public interface IVehicle 
 {
     //In your IVehicle:
             
@@ -11,4 +11,6 @@ public interface IVehicle
     public int Year { get; set; }
     public int NumberofWheels { get; set; }
     public int HorsePower { get; set; }
+    
+    public void DisplayDetails();
 }

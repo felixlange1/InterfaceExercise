@@ -1,3 +1,5 @@
+using System;
+
 namespace InterfaceExercise;
 
 public class Truck : ICompany, IVehicle
@@ -16,4 +18,16 @@ public class Truck : ICompany, IVehicle
     public int Year { get; set; }
     public int NumberofWheels { get; set; }
     public int HorsePower { get; set; }
+    public void DisplayDetails()
+    {
+        Console.WriteLine($"Truck Make: {Name}");
+        Console.WriteLine($"Model: {Model}");
+        Console.WriteLine($"Year: {Year}");
+        Console.WriteLine($"Logo: {Logo}");
+        Console.WriteLine($"Number of Wheels: {NumberofWheels}");
+        Console.WriteLine($"Horse Power: {HorsePower}");
+        Console.WriteLine($"HasCrewCab: {HasCrewCab}");
+        Console.WriteLine($"Weight: {Weight}");
+        Console.WriteLine("------------------------");
+    }
 }
